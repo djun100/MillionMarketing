@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yamtz.millionmarketing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- for log. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问精确位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 访问网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WIFI网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 改变WIFI网络状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 读写存储卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取电话状态的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 关闭应用程序的权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:name="com.yameng.utils.MyApplication"
+        android:icon="@drawable/yameng_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yameng.millionmarketing.Activity_Welcome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yameng.millionmarketing.Other" />
+        <activity android:name="com.yameng.millionmarketing.Activity_Login" />
+        <activity
+            android:name="com.yameng.millionmarketing.Activity_Register"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.yameng.millionmarketing.MainActivity" />
+        <activity android:name="com.yameng.millionmarketing.Activity_FirstRunGuide" />
+        <activity android:name="com.yameng.millionmarketing.Activity_SearchFriends" />
+        <activity android:name="com.yameng.millionmarketing.Activity_SearchFriendsResult" /> <!-- 搜索好友结果 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Notices" />
+        <activity android:name="com.yameng.millionmarketing.Activity_MyFriendsList" />
+        <activity android:name="com.yameng.millionmarketing.YM_GPS_MapviewActivity" /> <!-- 百度地图 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Retrieve_Password" /> <!-- 忘记密码 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Retrieve_Pverification_Code" /> <!-- 验证码 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Test" /> <!-- 测试AnimActivity用 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Prize" /> <!-- 奖励，成就 -->
+        <activity
+            android:name="com.yameng.millionmarketing.Activity_CommoditySend"
+            android:windowSoftInputMode="stateHidden" /> <!-- 发布商品、技能 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Commodities" /> <!-- 货主商品列表 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Mall" /> <!-- 可见货主商品列表 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_CommodityShow" /> <!-- 商品详细页 -->
+        <activity
+            android:name="com.yameng.millionmarketing.Activity_Subpage_Wealth_Shopping_Mall"
+            android:windowSoftInputMode="stateHidden" /> <!-- 财富商城 -->
+        <activity
+            android:name="com.yameng.millionmarketing.Activity_Subpage_News"
+            android:windowSoftInputMode="stateHidden" /> <!-- 新闻 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Subpage_Fund" /> <!-- 基金 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Subpage_Travel" /> <!-- 旅游 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Subpage_Catering" /> <!-- 餐饮 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_Subpage_Barter" /> <!-- 餐饮 -->
+        <activity
+            android:name="com.yameng.millionmarketing.Activity_Settings"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 设置 -->
+        <activity android:name="com.yameng.personal.Activity_Personal" />
+        <activity android:name="com.yameng.personal.Personal_MyAccount" />
+        <activity android:name="com.yameng.personal.Personal_MyActivity" />
+        <activity android:name="com.yameng.personal.Personal_MyFriends" />
+        <activity android:name="com.yameng.personal.Activity_Personal_Info" />
+        <activity android:name="com.yameng.personal.Activity_PersonalCenter" /> <!-- 个人中心 -->
+        <activity android:name="com.yameng.personal.Activity_FriendsList" /> <!-- 我的群组 -->
+        <activity
+            android:name="com.yameng.personal.Activity_Chitchat"
+            android:windowSoftInputMode="stateHidden" /> <!-- 聊天   windowSoftInputMode禁止弹出自动输入键盘 -->
+        <activity android:name="com.yameng.personal.InfoXiaohei" /> <!-- 详细信息 -->
+        <activity android:name="com.yameng.personal.InfoXiaoheiHead" /> <!-- 图片信息 -->
+        <activity android:name="com.yameng.personal.Activity_Chat" /> <!--  -->
+        <activity android:name="com.yameng.personal.Activity_My_Account" /> <!-- 我的账户 -->
+        <activity android:name="com.yameng.personal.Activity_State_Release" /> <!-- 发布状态 -->
+        <activity android:name="com.yameng.personal.Activity_Update_Edit_Profile" /> <!-- 编辑资料 -->
+        <activity android:name="com.yameng.personal.Activity_RecentChatList" /> <!-- 最近聊天列表 -->
+        <activity
+            android:name="com.yameng.personal.Activity_Address_book"
+            android:windowSoftInputMode="stateHidden" /> <!-- 通讯录 -->
+        <activity android:name="com.yameng.personal.Activity_Personal_Friend_Center" /> <!-- 好友资料 -->
+        <activity android:name="com.yameng.millionmarketing.Activity_FriendsCenter" /> <!-- 好友中心 -->
+         <!-- 消息预处理的intenService -->
+		<service android:name="com.way.baidupush.client.PreParseService"></service>
+        <!-- push service client -->
+        <receiver android:name="com.way.baidupush.client.PushMessageReceiver" >
+            <intent-filter>
+                <!-- 接收网络变化的广播 -->
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push service -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+	
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+
+        <meta-data
+            android:name="api_key"
+            android:value="YlxRkMiEDMQP7w4GLg10faOP" />
+        <!-- push service end -->
+    </application>
+
+</manifest>

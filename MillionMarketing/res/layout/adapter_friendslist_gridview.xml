@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 好友gridview的item布局 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 底层头像 ，默认男孩或女孩 -->
+
+    <ImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+         />
+    <!-- 二层发展状态，已发展/未发展 ,于右上角显示 -->
+
+    <ImageView
+        android:id="@+id/iv_expandstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:gravity="top|right"
+        android:src="@drawable/friendslist_expanded" />
+
+    <!-- 四层姓名白底，在头像底部中间 -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/friendslist_nameback" />
+    <!-- 五层姓名，于白底中间 -->
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="bottom"
+        android:textColor="#000"
+        android:text="加载中……" />
+
+</FrameLayout>

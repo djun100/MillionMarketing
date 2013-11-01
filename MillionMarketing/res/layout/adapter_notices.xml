@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notices_bg" >
+
+        <TextView
+            android:id="@+id/tv_personinviteme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="17dp"
+            android:text="加我为好友"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:onClick="onClick_CurrentItem"
+            android:src="@drawable/notices_go"
+            android:textColor="#FFFF0000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

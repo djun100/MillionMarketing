@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <!-- title(区域，标题，搜索) -->
+    <include android:id="@+id/in_title"
+        layout="@layout/include_friendslist_title"/>
+    <!-- 搜索 -->
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffff0000" />
+    <!-- 结果列表标题 -->
+    <!-- 查询好友结果列表 -->
+
+    <ListView
+        android:id="@+id/lv_notices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+
+</LinearLayout>

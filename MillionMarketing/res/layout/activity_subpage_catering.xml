@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/fl_personal_operate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 标题栏操作 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 标题栏 -->
+
+                <LinearLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/taskbar"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/activity_navigation_frame"
+                        android:paddingTop="@dimen/activity_navigation_frame" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="餐饮"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_catering_return"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/selector"
+                        android:text="返回"
+                        android:textColor="#ffffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/address_book_base_map"
+            android:paddingBottom="@dimen/activity_friend_frame"
+            android:paddingLeft="@dimen/activity_navigation_frame"
+            android:paddingRight="@dimen/activity_navigation_frame"
+            android:paddingTop="@dimen/activity_navigation_frame" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/address_book_input_box" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/activity_login_frame"
+                    android:paddingTop="@dimen/activity_wealth_store" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/address_book_search" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:hint="搜索"
+                        android:textColor="#bfbfbf"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/catering_base_map"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/catering_white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/catering_two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/catering_white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/catering_three" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/catering_white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/catering_four" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- 设置动画 -->
+
+        <Button
+            android:id="@+id/button_composer_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/composer_sleep" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myfriends" >
+
+            <!-- android:layout_above="@id/button_composer_sleep" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myaccount" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myachieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myachieve" >
+
+            <!-- android:layout_above="@id/button_composer_music" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_position" >
+
+            <!-- android:layout_above="@id/button_composer_place" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_info" >
+
+            <!-- android:layout_above="@id/button_composer_with" -->
+        </Button>
+
+        <Button
+            android:id="@+id/button_friends_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/select_btn_friend_set"
+            android:src="#00000000" >
+
+            <!-- android:layout_above="@id/button_composer_camera" -->
+        </Button>
+        <!-- android:layout_marginBottom="10dip" -->
+    </RelativeLayout>
+
+</FrameLayout>

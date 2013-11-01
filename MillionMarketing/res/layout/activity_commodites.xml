@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <!-- 引入标题栏 -->
+
+        <include
+            android:id="@+id/in_title"
+            layout="@layout/include_title" />
+
+        <ListView
+            android:id="@+id/lv_commodities"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <!-- 上层邀请发布资源 -->
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="赶快发布资源吧"
+        android:textColor="#d9d9d9"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>

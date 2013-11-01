@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/taskbar"
+        android:paddingBottom="@dimen/activity_navigation_frame"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_navigation_frame" >
+
+        <Button
+            android:id="@+id/btn_region"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="区域"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的通讯录"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_address_book_serch"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/address_book_base_map"
+        android:paddingBottom="@dimen/activity_friend_frame"
+        android:paddingLeft="@dimen/activity_navigation_frame"
+        android:paddingRight="@dimen/activity_navigation_frame"
+        android:paddingTop="@dimen/activity_navigation_frame" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/address_book_input_box" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_login_frame" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/address_book_search" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="搜索"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <!-- 好友列表 -->
+    <ListView
+        android:id="@+id/lv_address_book_friend"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

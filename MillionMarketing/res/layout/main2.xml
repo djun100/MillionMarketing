@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <!-- 第二层上侧 -->
+
+        <ImageButton
+            android:id="@+id/ib_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main2_mall_bg"
+            android:paddingBottom="10dp"
+            android:src="@drawable/selector_main2_mall" />
+
+        <ImageButton
+            android:id="@+id/ib_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main2_financing_bg"
+            android:paddingBottom="10dp"
+            android:src="@drawable/selector_main2_financing" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <!-- 底层listview -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_ad_left" >
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <!-- 第三层下侧 -->
+
+        <ImageButton
+            android:id="@+id/ib_null"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main2_eat_bg"
+            android:src="@drawable/selector_main2_eat" />
+
+        <ImageButton
+            android:id="@+id/ib_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main2_expire_blue_bg"
+            android:src="@drawable/selector_main_expire" />
+    </LinearLayout>
+
+</LinearLayout>

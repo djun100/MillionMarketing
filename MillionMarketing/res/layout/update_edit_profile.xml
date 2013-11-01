@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_profile_background" >
+
+    <FrameLayout
+        android:id="@+id/fl_personal_operate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 标题栏操作 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 标题栏 -->
+
+            <LinearLayout
+                android:id="@+id/rl_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/taskbar"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="编辑资料"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_edit_profile_return"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector"
+                    android:text="返回"
+                    android:textColor="#ffffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- 设置动画 -->
+
+        <Button
+            android:id="@+id/button_composer_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/composer_sleep" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myfriends" >
+
+            <!-- android:layout_above="@id/button_composer_sleep" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myaccount" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myachieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myachieve" >
+
+            <!-- android:layout_above="@id/button_composer_music" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_position" >
+
+            <!-- android:layout_above="@id/button_composer_place" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_info" >
+
+            <!-- android:layout_above="@id/button_composer_with" -->
+        </Button>
+
+        <Button
+            android:id="@+id/button_friends_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/select_btn_friend_set"
+            android:src="#00000000" >
+
+            <!-- android:layout_above="@id/button_composer_camera" -->
+        </Button>
+        <!-- android:layout_marginBottom="10dip" -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_edit_profile_one"
+        android:paddingRight="@dimen/activity_edit_profile_one"
+        android:paddingTop="@dimen/activity_edit_profile_two" >
+
+        <RelativeLayout
+            android:id="@+id/rl_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/select_edit_profile" >
+
+            <LinearLayout
+                android:id="@+id/ll_setPortrait"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/preference_single_item"
+                android:onClick="onClick_setPortrait"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="2dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="头    像:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/select_edit_picture" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_setPortrait"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_three"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_two"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="昵    称:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="nickname"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_four"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_three"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_five"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_four"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="密    码:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="password"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_one"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/select_edit_profile" >
+
+            <LinearLayout
+                android:id="@+id/ll_six"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="姓    名:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="name"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_seven"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_six"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_eight"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_seven"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="身份证:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_identification_card"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="identification card"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_nine"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_eight"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_ten"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_nine"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="地	 址:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="address"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_eleven"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_ten"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_twelve"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_eleven"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Q		  Q:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="Q		  Q"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_thirteen"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_twelve"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_fourteen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_thirteen"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="手 	 机:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="phone"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fifteen"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_fourteen"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_sixteen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_fifteen"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="邮	 箱:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_e_mail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="E_mail"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_seventeen"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_sixteen"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_eighteen"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_seventeen"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="问	 题:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="question"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_nineteen"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_eighteen"
+                android:background="@drawable/edit_profile_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_nineteen"
+                android:background="@drawable/preference_single_item"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_edit_profile_one"
+                android:paddingRight="@dimen/activity_edit_profile_one"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="答	 案:"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_answer"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="answer"
+                    android:textColor="#bfbfbf"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/edit_profile_arrows" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

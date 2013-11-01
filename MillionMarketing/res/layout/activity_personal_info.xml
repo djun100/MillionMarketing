@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/personalinfo_bg"
+            android:orientation="vertical"
+            android:paddingLeft="120dp"
+            android:paddingTop="110dp" >
+
+            <!-- 底层listview -->
+            <!-- user气泡 -->
+
+            <Button
+                android:id="@+id/btn_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/personalinfo_user"
+                android:text="user"
+                android:textColor="#ffb246"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="随记："
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="随便说点什么吧^-^"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机："
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12123124"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱："
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin@qq.com"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址："
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浦东新区"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/ib_personalcircle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/personalinfo_settings_bg" />
+
+                    <TextView
+                        android:id="@+id/tv_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFffb246"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        android:text="Settings"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/ib_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/selector_personalinfo_name_bg"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="姓名"
+                        android:textColor="#ffffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <!-- 右上角笔形图标 -->
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/personalinfo_edit_white" />
+                </FrameLayout>
+                <!-- 修改人物头像帧 -->
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <!-- 头像 -->
+
+                    <ImageButton
+                        android:id="@+id/ib_portrait"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/boy"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center" />
+                    <!-- 头像遮罩 -->
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/personalinfo_portrait_bg" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- 第二行 -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/ib_state"
+                    android:layout_width="114dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_personalinfo_state_bg"
+                    android:src="@drawable/selector_personalinfo_state" />
+
+                <!-- 右上角笔形图标 -->
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/personalinfo_edit_white" />
+            </FrameLayout>
+            <!-- 第三行 -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/ib_telephone"
+                    android:layout_width="114dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_personalinfo_phone_bg"
+                    android:src="@drawable/selector_personalinfo_phone" />
+
+                <!-- 右上角笔形图标 -->
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/personalinfo_edit_white" />
+            </FrameLayout>
+            <!-- 第四行 -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/ib_email"
+                    android:layout_width="114dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_personalinfo_email_bg"
+                    android:src="@drawable/selector_personalinfo_email" />
+
+                <!-- 右上角笔形图标 -->
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/personalinfo_edit_white" />
+            </FrameLayout>
+            <!-- 第五行 -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/ib_address"
+                    android:layout_width="114dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_personalinfo_address_bg"
+                    android:src="@drawable/selector_personalinfo_address" />
+
+                <!-- 右上角笔形图标 -->
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/personalinfo_edit_white" />
+            </FrameLayout>
+        </LinearLayout>
+
+<!--         <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nickname"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFffb246"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+
+            第四层昵称动画
+        </TextView> -->
+    </FrameLayout>
+
+</LinearLayout>

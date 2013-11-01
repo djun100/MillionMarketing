@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_personal_operate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 标题栏操作 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 标题栏 -->
+
+            <LinearLayout
+                android:id="@+id/rl_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/taskbar"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布状态"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_listing_status_return"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector"
+                    android:text="返回"
+                    android:textColor="#ffffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- 设置动画 -->
+
+        <Button
+            android:id="@+id/button_composer_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/composer_sleep" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myfriends" >
+
+            <!-- android:layout_above="@id/button_composer_sleep" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myaccount" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_myachieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_myachieve" >
+
+            <!-- android:layout_above="@id/button_composer_music" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_position" >
+
+            <!-- android:layout_above="@id/button_composer_place" -->
+        </Button>
+
+        <Button
+            android:id="@+id/btn_shortcut_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/shortcut_info" >
+
+            <!-- android:layout_above="@id/button_composer_with" -->
+        </Button>
+
+        <Button
+            android:id="@+id/button_friends_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/select_btn_friend_set"
+            android:src="#00000000" >
+
+            <!-- android:layout_above="@id/button_composer_camera" -->
+        </Button>
+        <!-- android:layout_marginBottom="10dip" -->
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/fl_personal_operate"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="分享新鲜事......."
+        android:paddingBottom="@dimen/activity_wealth_store"
+        android:paddingLeft="@dimen/activity_wealth_store"
+        android:paddingRight="@dimen/activity_wealth_store"
+        android:paddingTop="@dimen/activity_wealth_store"
+        android:textColor="#bfbfbf"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/wealth_shopping_mall_blueprint"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <ImageView
+                    android:id="@+id/img_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/listing_status_expression"
+                    android:clickable="true"
+                    android:scaleType="matrix" />
+
+                <ImageView
+                    android:id="@+id/img_address"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/listing_status_camera"
+                    android:clickable="true"
+                    android:scaleType="matrix" />
+
+                <ImageView
+                    android:id="@+id/img_friends"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/listing_status_photograph"
+                    android:clickable="true"
+                    android:scaleType="matrix" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:paddingBottom="@dimen/activity_wealth_store"
+                android:paddingLeft="@dimen/activity_retrieve_password"
+                android:paddingRight="@dimen/activity_retrieve_password"
+                android:paddingTop="@dimen/activity_wealth_store" >
+
+                <ImageView
+                    android:id="@+id/img_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listing_status_send" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

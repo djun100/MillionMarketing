@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item 
+        android:drawable="@drawable/set" 
+        android:state_pressed="false"
+        ></item>
+    <item 
+        android:drawable="@drawable/bg_set_item" 
+        android:state_pressed="true"
+        ></item>
+    <item 
+        android:drawable="@drawable/set"
+        ></item>
+
+</selector>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_wealth_store"
+        android:paddingLeft="@dimen/activity_edit_profile_one"
+        android:paddingRight="@dimen/activity_edit_profile_one"
+        android:paddingTop="@dimen/activity_wealth_store" >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edit_profile_tupian" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="凯撒零度空间菲拉斯"
+                android:textColor="#ff0000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="2dp"
+                android:text="阿德法撒旦法纳税的那份快乐就按税法"
+                android:textColor="#a9a9a9"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/edit_profile_arrows" />
+    </LinearLayout>
+
+</LinearLayout>

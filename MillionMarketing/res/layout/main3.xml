@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+<!-- 这个布局文件的艺术性非常强，有待研究 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 包裹iv组 -->
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    		<!-- 占1 -->
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/main_ad_right" >
+        </ImageView>
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    		<!-- 占2 -->
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 包裹周围框子用置于底层内容的上层 -->
+        <!-- 位置1大框架 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <!-- 位置1大框架的左侧 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <!-- 第二层上侧 -->
+
+                    <ImageButton
+                        android:id="@+id/ib_"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_main3_fly_bg"
+                        android:src="@drawable/selector_main3_fly" />
+
+                    <ImageButton
+                        android:id="@+id/ib_"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_main3_expireup_bg"
+                        android:src="@drawable/selector_main_expire" />
+                </LinearLayout>
+                <!-- 位置1大框架左侧的下侧占位 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+            <!-- end_pack -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <!-- 位置1大框架的右侧 -->
+
+                <ImageButton
+                    android:id="@+id/ib_"
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_main3_financecenter_bg"
+                    android:src="@drawable/selector_main3_financecenter" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--  -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- 第四层中靠右侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_null"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector_main3_expirerightup_bg"
+                android:src="@drawable/selector_main_expire" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- 第四层中靠右侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_null"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector_main3_expirerightdown_bg"
+                android:src="@drawable/selector_main_expire" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <!-- 第五层下侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main3_expiredown_bg"
+                android:src="@drawable/selector_main_expire" />
+
+            <ImageButton
+                android:id="@+id/ib_sendcommodity"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main3_expireorange_bg"
+                android:src="@drawable/selector_main_expire" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+</FrameLayout>

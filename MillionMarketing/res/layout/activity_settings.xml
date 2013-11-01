@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include layout="@layout/include_friendslist_title" />
+
+     <!-- <com.way.scrollview.BounceScrollView -->
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/way_coversation_bg"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/chat_background"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            
+
+            <TextView
+                android:id="@+id/my_profile"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/way_common_strip_setting_middle"
+                android:clickable="true"
+                android:drawableRight="@drawable/way_arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="@string/clear_cache" />
+
+            <TextView
+                android:id="@+id/face_jazz_effects"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/way_common_strip_setting_bottom"
+                android:clickable="true"
+                android:drawableRight="@drawable/way_arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="@string/set_theme" />
+
+            <RelativeLayout
+                android:id="@+id/pushSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/way_common_strip_setting_top"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/encoding_style"
+                    style="@style/B4_Font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_message_notify" />
+
+                <com.way.switchbtn.SwitchButton
+                    android:id="@+id/message_notify_switch"
+                    android:layout_width="80dip"
+                    android:layout_height="28dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/way_common_strip_setting_middle"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    style="@style/B4_Font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_2g3gpic" />
+
+                <com.way.switchbtn.SwitchButton
+                    android:id="@+id/pullrefresh_sound_switch"
+                    android:layout_width="80dip"
+                    android:layout_height="28dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sound_and_vibrate"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/way_common_strip_setting_bottom"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    style="@style/B4_Font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_message_sound" />
+
+                <com.way.switchbtn.SwitchButton
+                    android:id="@+id/message_sound_switch"
+                    android:layout_width="80dip"
+                    android:layout_height="28dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/displaySetting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/way_common_strip_setting_bg"
+                    android:clickable="false"
+                    android:focusable="false" >
+
+                    <TextView
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/set_vibrateor" />
+
+                    <com.way.switchbtn.SwitchButton
+                        android:id="@+id/show_head_switch"
+                        android:layout_width="80dip"
+                        android:layout_height="28dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/set_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/way_common_strip_setting_top"
+                    android:clickable="true"
+                    android:focusable="true" >
+
+                    <TextView
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="反馈" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="14.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/way_arrow_right_gray_white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/set_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/way_common_strip_setting_bottom"
+                    android:clickable="true"
+                    android:focusable="true" >
+
+                    <TextView
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/menu_about" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="14.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/way_arrow_right_gray_white" />
+                </RelativeLayout>
+            </LinearLayout>
+                                <Button
+                android:id="@+id/btn_exit_app"
+                style="@style/RedGreen"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/way_common_btn_red"
+                android:text="@string/logout_exit_account" />
+        </LinearLayout>
+
+    </ScrollView>
+<!--     </com.way.scrollview.BounceScrollView> -->
+
+    
+
+</LinearLayout>

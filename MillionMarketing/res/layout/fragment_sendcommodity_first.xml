@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商品属性 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cba"
+    android:orientation="vertical" >
+
+    <!--  -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题："
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:maxLength="35"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="(最多35个字)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量："
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_sum"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="件"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格："
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="利润："
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_profit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述："
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_describe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:maxLength="5000"
+            android:minLines="7" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片："
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/picture"
+            android:onClick="onClick_selectPicture"
+            android:text="选择图片" />
+
+        <TextView
+            android:id="@+id/tv_pictureslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_picture"
+            android:layout_below="@+id/btn_picture"
+            android:text="待上传商品图片："
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_commoditySubmit"
+            android:text="提交" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

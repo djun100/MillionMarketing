@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <!-- 底层listview -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 包裹周围框子用置于底层内容的上层 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 第二层上侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/personalcenter_red_bg" />
+
+            <ImageButton
+                android:id="@+id/ib_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/personalcenter_orange_bg" />
+
+            <ImageButton
+                android:id="@+id/ib_invitefriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/selector_personalcenter_addfriends"
+                android:background="@drawable/personalcenter_green_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-28dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- 第三层中靠右侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/personalcenter_yellow_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <!-- 第四层中靠右侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_commodities"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/personalcenter_bluegrid_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <!-- 第五层下侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_achieves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_personalcenter_ib_achives_bg"
+                android:src="@drawable/selector_personalcenter_ib_achives" />
+
+            <ImageButton
+                android:id="@+id/ib_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/personalcenter_achivesinfo_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

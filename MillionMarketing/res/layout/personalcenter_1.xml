@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <!-- 底层listview -->
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/personalcenter_listview_margintop" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+                    android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <!-- 第二层上侧 -->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/ib_personalcircle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/personalcenter_circle" />
+            <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nickname\nCircle"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFffb246"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" >
+
+        <!-- 第四层昵称动画 -->
+    </TextView>
+        </FrameLayout>
+        
+
+        <ImageButton
+            android:id="@+id/ib_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_personalcenter_ib_activities_bg"
+            android:paddingBottom="10dp"
+            android:src="@drawable/selector_personalcenter_ib_activities" />
+
+        <ImageButton
+            android:id="@+id/ib_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_personalcenter_ib_friends_bg"
+            android:paddingBottom="10dp"
+            android:src="@drawable/selector_personalcenter_ib_friends" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- 第三层下侧 -->
+
+        <ImageButton
+            android:id="@+id/ib_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_personalcenter_ib_messages_bg"
+            android:src="@drawable/selector_personalcenter_ib_messages" />
+
+        <ImageButton
+            android:id="@+id/ib_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_personalcenter_ib_null_bg" />
+
+        <ImageButton
+            android:id="@+id/ib_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_personalcenter_ib_settings_bg"
+            android:src="@drawable/selector_personalcenter_ib_settings" />
+    </LinearLayout>
+
+    
+
+</FrameLayout>

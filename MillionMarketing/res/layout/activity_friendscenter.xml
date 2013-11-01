@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <!-- 底层listview -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 包裹周围框子用置于底层内容的上层 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <!-- 第二层上侧 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ib_"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/friendscenter_head_bg" />
+                    <!-- 这个地方用9patch图片会出错 -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ib_"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/friendscenter_expandstate_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ib_"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:background="@drawable/friendscenter_white_bg" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <!-- android:layout_marginTop="-15dp" -->
+                <!-- 第三层中靠右侧 -->
+
+                <ImageButton
+                    android:id="@+id/ib_chat"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/friendscenter_chat_bg_pressed"
+                    android:src="@drawable/friendscenter_chat_pressed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <!-- 第四层中靠右侧 -->
+
+                <ImageButton
+                    android:id="@+id/ib_null"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/friendscenter_info_bg"
+                    android:src="@drawable/friendscenter_personalinfo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <!-- 第五层中靠右侧 -->
+
+                <ImageButton
+                    android:id="@+id/ib_null"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/friendscenter_said_bg"
+                    android:src="@drawable/friendscenter_said" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <!-- 第五层下侧 -->
+
+                <ImageButton
+                    android:id="@+id/ib_achieves"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_personalcenter_ib_achives_bg"
+                    android:src="@drawable/friendscenter_pictures" />
+
+                <ImageButton
+                    android:id="@+id/ib_null"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/friendscenter_friends_bg"
+                    android:src="@drawable/friendscenter_hisfriends" />
+
+                <ImageButton
+                    android:id="@+id/ib_null"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/friendscenter_orange_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- title(区域，标题，搜索) -->
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_title"/>
+    <!-- 搜索 -->
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffff0000" />
+    <!-- 结果列表标题 -->
+
+    <LinearLayout
+        android:id="@+id/ll_rowtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#15ff00ff"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="姓    名"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="手    机"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!-- 查询好友结果列表 -->
+
+    <ListView
+        android:id="@+id/lv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

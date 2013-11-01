@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+     <!-- 登录界面 -->
+    <dimen name="activity_horizontal_margin">10dp</dimen><!-- 限制输入栏的宽度   -->
+    <dimen name="activity_vertical_margin">20dp</dimen><!-- 输入栏居顶的高度 -->
+    <dimen name="activity_login_frame">1dp</dimen><!-- 限制GO（登录）的高度   -->
+    <dimen name="activity_horizontal_frame">50dp</dimen><!-- 限制登录框的宽度（整个大块） -->
+    <dimen name="activity_vertical_frame">110dp</dimen><!--  限制登录框的高度（整个大块）-->
+    <dimen name="activity_navigation_frame">10dp</dimen><!-- 导航栏 -->
+    <dimen name="activity_friend_frame">9dp</dimen><!-- 导航栏 -->
+    <dimen name="activity_retrieve_password">15dp</dimen><!-- 找回密码 -->
+     <dimen name="activity_retrieve">50dp</dimen><!-- 找回密码 -->
+    <dimen name="activity_my_account">30dp</dimen><!-- 我的账户 -->
+    <dimen name="activity_wealth_store">2dp</dimen><!-- 财富商城 -->
+    <dimen name="activity_edit_profile_one">20dp</dimen><!-- 编辑资料 -->
+    <dimen name="activity_edit_profile_two">30dp</dimen><!-- 编辑资料 -->
+    <dimen name="personalcenter_listview_margintop">85dp</dimen><!-- 个人中心listview距离上边 -->
+    <dimen name="friendslist_gridview_margintop">90dp</dimen><!-- 好友gridview距离上边 -->
+    <dimen name="friendslist_gridview_marginbottom">90dp</dimen><!-- 好友gridview距离下边 -->
+</resources>

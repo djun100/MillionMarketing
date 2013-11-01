@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#eaeaea"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/loginRoot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+                    android:background="@drawable/register_bg"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <!-- 标题栏 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="20dp" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_register_back" />
+            </LinearLayout>
+            <!--  -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/register_content_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <!-- 单条注册内容项 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_user" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户名"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_user"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 密码 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_password" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密    码"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 身份证 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_identifer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份证"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_identifer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 手    机 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手    机"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 邮箱 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮    箱"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 职业 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_profession" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职    业"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_profession"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 单条注册内容项 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/register_address" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="住    址"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/selector_register_et_bg" />
+                </LinearLayout>
+                <!-- 提交 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ib_post"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/selector_register_confirm"
+                        android:onClick="onClick_login_btn_register" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--  -->
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

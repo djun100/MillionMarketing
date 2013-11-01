@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 引入标题栏 -->
+
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <!-- 底层好友gridview -->
+
+
+        <!--
+             <LinearLayout
+            android:id="@+id/fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/friendslist_gridview_marginbottom"
+            android:layout_marginTop="@dimen/friendslist_gridview_margintop" />
+        -->
+
+
+        <!--
+        <GridView
+            android:id="@+id/gv_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/friendslist_gridview_marginbottom"
+            android:layout_marginTop="@dimen/friendslist_gridview_margintop"
+            android:numColumns="3"
+            android:padding="10dip"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dip" >
+        </GridView>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 第二层上侧 -->
+
+            <ImageButton
+                android:id="@+id/ib_personalcircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/personalcenter_circle" />
+
+            <ImageButton
+                android:id="@+id/ib_groupchat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_friendslist_ib_groupchat_bg"
+                android:paddingBottom="10dp"
+                android:src="@drawable/selector_friendslist_ib_groupchat" />
+
+            <ImageButton
+                android:id="@+id/ib_friendsgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_friendslist_ib_friendsgroup_bg"
+                android:paddingBottom="10dp"
+                android:src="@drawable/selector_friendslist_ib_friendsgroup" />
+        </LinearLayout>
+        <!-- tabhost的linearlayout -->
+
+        <LinearLayout
+            android:id="@+id/hometabs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabHost
+                android:id="@+id/tabhost"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="100dp" >
+
+                        <!-- 第一页 -->
+
+                        <GridView
+                            android:id="@+id/gv_friends"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="3"
+                            android:padding="10dip"
+                            android:verticalSpacing="10dip" >
+                        </GridView>
+                        <!-- 第二页 -->
+
+                        <GridView
+                            android:id="@+id/gv_friendsl2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="3"
+                            android:padding="10dip"
+                            android:verticalSpacing="10dip" >
+                        </GridView>
+                        <!-- 第三页 -->
+
+                        <GridView
+                            android:id="@+id/gv_friendsl3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="3"
+                            android:padding="10dip"
+                            android:verticalSpacing="10dip" >
+                        </GridView>
+                    </FrameLayout>
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/tabcontent" >
+                    </TabWidget>
+                </RelativeLayout>
+            </TabHost>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nickname\nCircle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFffb246"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+
+            <!-- 第四层昵称动画 -->
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

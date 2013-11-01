@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 引入标题栏 -->
+
+        <include
+            android:id="@+id/in_title"
+            layout="@layout/include_title" />
+
+        <com.k.util.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <!-- 资源标题 -->
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="标题"
+                        android:textColor="#000"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#696969" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <!-- 资源价格 -->
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="价格"
+                        android:textColor="#f00"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#696969" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <!-- 资源库存 -->
+
+                    <TextView
+                        android:id="@+id/tv_stock"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="库存"
+                        android:textColor="#000"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#696969" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <!-- 资源内容 -->
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="资源详细内容"
+                        android:textColor="#000"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#696969" />
+                <!-- 图片放这里 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_pics"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <!-- 横向图片滑动展示 -->
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_pic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="160dp"
+                         >
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/viewGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vp_pic"
+                        android:layout_marginTop="-25px"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <!-- 用户评价 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="用户评价:暂无"
+                        android:textColor="#000"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.k.util.MyScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <!-- 底部联系购买栏，一直显示 -->
+
+        <Button
+            android:id="@+id/btn_delorbuy"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="#f00"
+            android:text="购买"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+</FrameLayout>

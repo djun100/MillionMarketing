@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefebe7"
+    tools:context=".Activity_Chat" >
+
+    <!-- title(区域，标题，搜索) -->
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/taskbar"
+        android:paddingBottom="@dimen/activity_navigation_frame"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_navigation_frame" >
+
+        <Button
+            android:id="@+id/btn_region"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="区域"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的亚盟"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!-- 功能列表 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_function_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <!-- 功能栏 -->
+
+        <TextView
+            android:id="@+id/tv_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能栏"
+            android:textSize="20sp" />
+        <!-- 功能1 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_function1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_function"
+            android:background="@drawable/personal_function_up_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp" >
+
+            <!-- 功能1图标文字 -->
+
+            <TextView
+                android:id="@+id/tv_function1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/personal_function1_icon"
+                android:drawablePadding="10.0dip"
+                android:text="功能1"
+                android:textSize="20sp" />
+            <!-- 功能1箭头 -->
+
+            <ImageView
+                android:id="@+id/iv_function1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/personal_function_arrow" />
+        </RelativeLayout>
+        <!-- 功能2 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_function2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_function1"
+            android:background="@drawable/personal_function_down_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/tv_function2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/personal_function1_icon"
+                android:drawablePadding="10.0dip"
+                android:text="功能2"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_function2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/personal_function_arrow" />
+        </RelativeLayout>
+        <!-- 功能3,4,5 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_function3_4_5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/rl_function2"
+            android:layout_marginTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/iv_function3"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="#e0fbad25" />
+
+            <ImageButton
+                android:id="@+id/iv_function4"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/iv_function3"
+                android:layout_weight="1"
+                android:background="#e025aad5" />
+
+            <ImageButton
+                android:id="@+id/iv_function5"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@id/iv_function4"
+                android:layout_weight="1"
+                android:background="#e00aa444" />
+        </RelativeLayout>
+        <!-- 功能模块1,2,3 -->
+
+
+        <!-- 功能模块标题 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_function_model1_2_3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/rl_function3_4_5"
+            android:layout_marginTop="10dp" >
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
